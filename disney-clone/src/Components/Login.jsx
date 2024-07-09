@@ -12,7 +12,7 @@ const Login = () => {
             "Never stop fighting until you arrive at your destined place - the
             unique you. Have an aim in life, continuously acquire knowledge,
             work hard, and have perseverance to realise the great life." -Dr.
-            APJ Abdul Kalam || 25/07/2024
+            APJ Abdul Kalam || 10/07/2024
           </Description>
           <CTALogoTwo src="/Images/cta-logo-two.png" alt="Logo below desc" />
         </CTA>
