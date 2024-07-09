@@ -1,0 +1,3 @@
+1) Switch in react-router-dom was not working, i have replaced it by <Routes></Routes>.
+2) i got a Uncaught runtime errors: because of the wrong syntax of  <Route/>. Then i correct it <Route path='path' element= {component}/>
+3)
