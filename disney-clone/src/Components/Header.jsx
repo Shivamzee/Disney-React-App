@@ -1,7 +1,21 @@
 import React from "react";
 import styled from "styled-components";
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+
+import { auth, provider } from "../firebase";
 
 const Header = () => {
+  console.log("hello");
+  const signInWithGoogle = async () => {
+    const provider = new GoogleAuthProvider();
+    try {
+      const result = await signInWithPopup(auth, provider);
+      const user = result.user;
+      console.log(user);
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <Nav>
       <Logo>
@@ -33,7 +47,7 @@ const Header = () => {
           <span>Series</span>
         </a>
       </NavMenu>
-      <Login>Login</Login>
+      <Login onClick={signInWithGoogle}>Login</Login>
     </Nav>
   );
 };
@@ -132,6 +146,18 @@ const NavMenu = styled.div`
   }
 `;
 
-const Login = styled.a``;
+const Login = styled.a`
+  background-color: #000;
+  font-size: 18px;
+  padding: 8px 16px;
+  letter-spacing: 1.5px;
+  border: 1px solid #f9f9f9;
+  border-radius: 3px;
+
+  &:hover {
+    color: #000;
+    background-color: #f9f9f9;
+  }
+`;
 
 export default Header;

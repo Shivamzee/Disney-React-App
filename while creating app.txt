@@ -1,3 +1,30 @@
 1) Switch in react-router-dom was not working, i have replaced it by <Routes></Routes>.
 2) i got a Uncaught runtime errors: because of the wrong syntax of  <Route/>. Then i correct it <Route path='path' element= {component}/>
-3)
+3) while setup of firebase for loginAuth got an error: ERROR in ./src/firebase.js 24:0-22
+export 'default' (imported as 'firebase') was not found in 'firebase/app' (possible exports: FirebaseError, SDK_VERSION, _DEFAULT_ENTRY_NAME, _addComponent,
+==> It was my mistake fixed by the help of chatgpt
+
+4) Again new Error : Uncaught runtime errors:
+ERROR
+app.firestore is not a function
+TypeError: app.firestore is not a function
+
+
+5) For  Login added Google auth provider=> GoogleAuthProvider();
+6) New Error : ERROR
+Cannot read properties of undefined (reading 'GooglrAuthProvider')
+TypeError: Cannot read properties of undefined (reading 'GooglrAuthProvider')
+==> solved with the help of chatgpt
+
+7) New Error : app.storage is not a function
+TypeError: app.storage is not a function
+==> solved with the help of chatgpt
+
+8) New Error: Uncaught runtime errors: ERROR
+_firebase__WEBPACK_IMPORTED_MODULE_1__.auth.signInWithPopup is not a function
+TypeError: _firebase__WEBPACK_IMPORTED_MODULE_1__.auth.signInWithPopup is not a function
+===> Same  solved by chatgpt
+by importing :) import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+
+
+$$$$$$ It is 2 am. I will solve all error ha..ha..ha....$$$$$$$$$
