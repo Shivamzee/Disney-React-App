@@ -26,5 +26,17 @@ TypeError: _firebase__WEBPACK_IMPORTED_MODULE_1__.auth.signInWithPopup is not a 
 ===> Same  solved by chatgpt
 by importing :) import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
+9) Error : When i wrap my <App/> in <Provider/>. It was showing that <Provider/> is not defined. But after importing <Provider/> from redux. Then
+ERROR in ./src/index.js 6:0-39
+Module not found: Error: Can't resolve 'react-redux' in 'G:\Shivam_all
+==> solved after reading React-redux docs:
 
 $$$$$$ It is 2 am. I will solve all error ha..ha..ha....$$$$$$$$$
+
+10)Compiled with problems:
+ERROR in ./src/App/store.jsx 6:14-34
+export 'getDefauleMiddleware' (imported as 'getDefauleMiddleware') was not found in '@reduxjs/toolkit'
+==> solved ,  After spending 1 hour on google an google :) 'getDefauleMiddleware' is deprecated and replaced by 'getDefauleMiddleware'
+
+11) Uncaught runtime errors:ERROR
+`middleware` field must be a callback
